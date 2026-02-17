@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { APP_NAME } from '../app.constants';
 
 @Component({
   selector: 'app-home',
@@ -7,5 +8,5 @@ import { Component } from '@angular/core';
   styleUrl: './home.css',
 })
 export class Home {
-
+  appName = APP_NAME;
 }
