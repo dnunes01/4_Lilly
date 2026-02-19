@@ -1,0 +1,35 @@
+.schedule-form {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  max-width: 400px;
+}
+
+.schedule-form input,
+.schedule-form textarea {
+  width: 100%;
+  padding: 8px;
+  border-radius: 6px;
+  border: 1px solid #ccc;
+}
+
+.schedule-form button {
+  padding: 10px;
+  background: #5c8d89;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+.schedule-form button:disabled {
+  background: #aaa;
+  cursor: not-allowed;
+}
+
+.confirmation {
+  margin-top: 20px;
+  padding: 15px;
+  background: #e8f5e9;
+  border-radius: 6px;
+}

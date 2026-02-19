@@ -1,1 +1,37 @@
-<p>schedule page opens!</p>
+<h1>Schedule an Appointment</h1>
+
+<form #form="ngForm" (ngSubmit)="submitForm(form)" class="schedule-form">
+
+  <label>
+    Your Name:
+    <input type="text" name="name" ngModel required>
+  </label>
+
+  <label>
+    Email:
+    <input type="email" name="email" ngModel required>
+  </label>
+
+  <label>
+    Dog’s Name:
+    <input type="text" name="dogName" ngModel>
+  </label>
+
+  <label>
+    Preferred Date:
+    <input type="date" name="date" ngModel required>
+  </label>
+
+  <label>
+    Notes:
+    <textarea name="notes" ngModel></textarea>
+  </label>
+
+  <button type="submit" [disabled]="form.invalid">Request Appointment</button>
+
+</form>
+
+<div *ngIf="submitted" class="confirmation">
+  <h2>Appointment Request Sent!</h2>
+  <p>Thank you, {{ formData.name }}. We’ll contact you soon.</p>
+</div>
