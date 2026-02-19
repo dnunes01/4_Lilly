@@ -1,1 +1,26 @@
-<p>contact works!</p>
+<h1>Contact Us</h1>
+
+<div class="contact-info">
+
+  <p>
+    <strong>Business Name:</strong> {{ appName }}
+  </p>
+
+  <p>
+    <strong>Tagline:</strong> {{ tagline }}
+  </p>
+
+  <p>
+    <strong>Phone:</strong>
+    <a [href]="'tel:' + phone">{{ phone }}</a>
+  </p>
+
+  <p>
+    <strong>Hours:</strong> {{ hours }}
+  </p>
+  <p>
+    <strong>Email:</strong>
+    <a [href]="'mailto:' + email">{{ email }}</a> 
+  </p>
+
+</div>
