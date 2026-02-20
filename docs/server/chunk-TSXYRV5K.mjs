@@ -1,0 +1,2 @@
+import './polyfills.server.mjs';
+var o="Tidy Tails Collective",t="Professional grooming with a gentle touch",e="555-123-4567",n="Mon\u2013Fri: 10am\u20135pm",P="dnunes.utah@gmail.com",s="Tidy Tails";export{o as a,t as b,e as c,n as d,P as e,s as f};
